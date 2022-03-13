@@ -1,21 +1,24 @@
 <template>
  
-    <section>
-        <!-- v-for -->
-        
-    </section>
+    <ul>
+        <MyAlbum v-for="(album,i) in albums" :key="i" :album="album">
+            {{ album.title }}
+        </MyAlbum>
+    </ul>
 
 </template>
 
 <script>
 import axios from 'axios'
+import MyAlbum from './MyAlbum.vue'
 
 export default {
+    components:{
+        MyAlbum,
+    },
     data(){
         return {
-            album:[
-
-            ]
+            albums:[]
         }
     },
     methods:{
@@ -23,6 +26,13 @@ export default {
 
             // chiamata server 
             axios.get(' https://flynn.boolean.careers/exercises/api/array/music')
+            .then( res=> {
+                this.albums = res.data.response
+            })
+           .catch ( err => {
+               console.erul( err.response);
+               this.albums = [ ]
+           } )
 
             // salvare array di album dentro this.album
 
@@ -36,6 +46,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 
 </style>

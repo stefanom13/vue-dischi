@@ -19,14 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-img{
-  max-width: 100%;
-}
+@import './assets/scss/_common.scss';
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

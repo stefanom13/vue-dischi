@@ -2,7 +2,7 @@
 
   <header>
     <figure>
-      <img src="../assets/logo.png" alt="">
+      <img src="../assets/Spotify_Logo.png" alt="">
     </figure>
   </header>
 
@@ -19,11 +19,20 @@ export default {
 <style scoped lang="scss">
 
 header {
-  background-color: #112211;
+  background-color: rgba(white,0.1);
   padding:10px 5px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
 
   figure{
     width:100px;
+
+    img{
+      display: block;
+      z-index: 999;
+    }
   }
 }
 

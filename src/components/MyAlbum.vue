@@ -32,7 +32,28 @@ export default {
     .album{
         text-align: center;
         background-color:rgba(white,0.1);
-        padding:10px;
+        padding:8px;
+
+        .cardThumb{
+           
+            
+            
+        }
+        .infoCard{
+               font-size: 15px;
+
+               h3{
+                   padding: 10px;
+               }
+
+               p{
+                   color: rgba(white,0.2);
+                   
+               }
+               
+
+           }
+        
     }
 
 </style>

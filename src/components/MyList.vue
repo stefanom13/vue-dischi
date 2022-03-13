@@ -56,8 +56,8 @@ export default {
 
         & > * {
             width: 19%;
+            padding:5px;
         }
-
 
     }
  

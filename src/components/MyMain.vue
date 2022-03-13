@@ -29,6 +29,10 @@ export default {
 main {
     background-color: #1e2d3b;
     min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:90px 20px;
 
 }
 

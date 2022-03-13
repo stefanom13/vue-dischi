@@ -1,11 +1,22 @@
 <template>
+
   <main>
-      contenuto
+      <section class="">
+          <div class="container">
+              <MyList />
+          </div>
+      </section>
   </main>
+  
 </template>
 
 <script>
+import MyList from './MyList.vue'
+
 export default {
+    components:{
+        MyList,
+    }
     
 };
 </script>

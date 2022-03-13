@@ -20,7 +20,7 @@ export default {
 
 header {
   background-color: rgba(white,0.1);
-  padding:10px 5px;
+  padding:10px 8px;
   position:fixed;
   top:0;
   left:0;

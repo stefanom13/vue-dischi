@@ -34,11 +34,7 @@ export default {
         background-color:rgba(white,0.1);
         padding:8px;
 
-        .cardThumb{
-           
-            
-            
-        }
+        
         .infoCard{
                font-size: 15px;
 

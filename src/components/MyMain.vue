@@ -12,6 +12,8 @@
 
 <script>
 import MyList from './MyList.vue'
+import '..//assets/scss/_common.scss';
+
 
 export default {
     components:{
@@ -27,10 +29,7 @@ export default {
 main {
     background-color: #1e2d3b;
     min-height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 </style>

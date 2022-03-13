@@ -1,10 +1,11 @@
 <template>
  
-    <ul>
+    <ul class="albumWrap">
         <MyAlbum v-for="(album,i) in albums" :key="i" :album="album">
             {{ album.title }}
         </MyAlbum>
     </ul>
+    
 
 </template>
 
@@ -47,5 +48,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+    .albumWrap{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px calc(5% / 4);
+
+        & > * {
+            width: 19%;
+        }
+
+
+    }
+ 
+    
+
 
 </style>

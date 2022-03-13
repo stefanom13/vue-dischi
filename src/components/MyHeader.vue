@@ -31,7 +31,7 @@ header {
 
     img{
       display: block;
-      z-index: 999;
+      
     }
   }
 }
